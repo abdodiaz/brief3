@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location voiture</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Une agence de location  veut mettre en oeuvre un système de réservation de véhicules.">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> VL<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="#banner">Accueil</a></li>
+            <li><a href="#about">À propos de</a></li>
+            <li><a href="#gallerie">Gallerie</a></li>
+            <li><a href="#reservation">Réservation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+ <section class="banner" id="banner">
+    <div class="content">
+        <h2>toujours choisi le bien</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown  printer took a galley of type and scrambled it to make a
+            type specimen book. 
+        </p>
+        <a href="#gallerie" class="btn">Gallerie</a>
+    </div>
+ </section>
+ <section class="about" id ="about"></section>
+ <div class="row">
+     <div class="col50">
+         <h2 class="titleText"> <span>À</span> propos de</h2>
+         <p class="par">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type 
+            specimen book. <br><br> It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in 
+            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including
+            versions of Lorem Ipsum.<br><br> It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in 
+            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including
+            versions of Lorem Ipsum. <br> <br>
+         </p>
+         <a href="#contact" class="btn" >Contact</a>
+         </div>
+         <div class="col50">
+            <div class="imgBx">
+                <img src="image/img1.jpg" alt="=voiture">  
+            </div>
+        </div>
+      
+    </div>
+    
+        </section>
+<section class="gallerie" id="gallerie">
+    <div class="cont">
+        <div class="txt">
+            <h2 class="title"><span>G</span>allerie</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <nav>
+            <div class="items">
+                <span class="item active"data-name="all">All</span>
+                <span class="item"data-name="voiture">Voiture</span>
+                <span class="item"data-name="moto">Moto</span>
+                <span class="item"data-name="camion">Camion</span>
+                <span class="item"data-name="engin">Engin</span>
+            </div>
+        </nav>
+        <div class="gallery">
+           
+        <div class="image" data-name="voiture"> <span><img src="Vimg/car.png" alt="voiture" ></span></div>
+        <div class="image" data-name="voiture"> <span><img src="Vimg/car1.png" alt="voiture" ></span></div>
+        <div class="image" data-name="voiture"> <span><img src="Vimg/car2.webp"alt="voiture" ></span></div>
+        <div class="image" data-name="voiture"> <span><img src="Vimg/car3.png"alt="voiture" ></span></div>
+        <div class="image" data-name="moto"> <span><img src="Vimg/moto.png" alt="moto" ></span></div>
+        <div class="image" data-name="moto"> <span><img src="Vimg/moto1.png"  alt="moto" ></span></div>
+        <div class="image" data-name="moto"> <span><img src="Vimg/moto2.png" alt="moto" ></span></div>
+        <div class="image" data-name="camion"> <span><img src="Vimg/camion.png" alt="camion" ></span></div>
+        <div class="image" data-name="camion"> <span><img src="Vimg/camion1.png" alt="camion" ></span></div>
+        <div class="image" data-name="engin"> <span><img src="Vimg/engin.png" alt="engin" ></span></div>
+        <div class="image" data-name="engin"> <span><img src="Vimg/engin1.png" alt="engin"  ></span></div>
+        <div class="image" data-name="engin"> <span><img src="Vimg/engin3.png" alt="engin"  ></span></div>
+        </div>
+    </div>
+</section>
+
+<section class="reservation" id="reservation">
+    <div class="cont">
+        <div class="txt">
+            <h2 class="title"><span>R</span>éservation</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+    <div class="galleryres">
+        <div class="image"  > <span><img id="imgVoiture" src="Vimg2/voiture.png" alt="voiture" onclick="voiture()" ></span></div>
+        <div class="image" > <span><img id="imgCamion" src="Vimg2/camion.png" alt="camion" ></span></div>
+        <div class="image" > <span><img id="imgEngins" src="Vimg2/engins.png"   alt="engin"></span></div>
+        <div class="image" > <span><img id="imgMOto" src="Vimg2/moto.png"alt="moto" ></span></div>
+    </div>
+    <div class="inpt" id="form" >
+        <label>type</label>
+       <select name="type" id="type" s>
+           <option value="cadin">cadin</option>
+           <option value="compact">compact</option>
+           <option value="berline">berline</option>
+       </select>
+       <label>carburant</label>
+       <select name="carburant" id="carburant">
+           <option value="carburant"></option>
+       </select>
+       <label>boite à vitesse </label>
+       <span id="boite">sdc</span>
+       <input type="text"  id="subject" class="inpts"  placeholder="Nombre du jours">
+       <button type="button" onclick="" class="btn bt">Réserver</button>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="cont">
+        <div class="txt">
+            <h2 class="title"><span>C</span>ontact</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+    
+    <div class="inpt" id="form" >
+        <input type="text" id="name" class="inpts"  placeholder="Nom"  > <span id="sname" class="msgspan"></span>
+        <input type="text"  id="email"  class="inpts"  placeholder="Email"><span id="smail" class="msgspan"></span>
+        <input type="text"  id="subject" class="inpts"  placeholder="Sujet">
+        <textarea name="message" id="message"  class="inpts area" id="message"   placeholder="Message"></textarea><span id="smsg"  class="msgspan"></span>
+        <button type="button" onclick="valide()" class="btn bt">Envoyer</button>
+    </div>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
