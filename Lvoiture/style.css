@@ -79,6 +79,7 @@ header .logo span{
 header .navigation{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
 }
 header .navigation li{
     list-style: none;
@@ -105,14 +106,15 @@ section{
     display: flex;
     text-align: center;
     justify-content: space-between;
-    /*marg*/
     margin-top: auto;
+    justify-content: center;
 }
 .row .col50
 {
     position: relative;
     width: 48%;
     margin-left: 4em;
+    
 }
 .titleText{
     color:#111 ;
@@ -121,6 +123,7 @@ section{
 }
 .row .col50 .par{
     font-size: 1.2em;
+    
 }
 .titleText span{
     color: #ff0157;
@@ -178,7 +181,7 @@ nav .items .item:hover{
 }
 .gallerie{
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -223,10 +226,22 @@ nav .items .item:hover{
     transform: scale(1.1);
 }
 @media(max-width: 1000px){
+  
     .gallery .image{
         
         width: calc(100%/3);
     }
+    .row .imgBx {
+        display: none;
+    }
+    .logo{
+        display: none;
+    
+    }
+    .navigation{
+        justify-content: center;
+    }
+
 }
 @media(max-width: 800px){
     .gallery .image{
@@ -255,6 +270,9 @@ nav .items .item:hover{
         
         width: 100%
     }
+    .inpts{    width: 350px;}
+    
+
 }
 
 /*contact*/
@@ -265,6 +283,7 @@ nav .items .item:hover{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    size: 1em;
 
 }
 .inpts{
@@ -276,8 +295,14 @@ nav .items .item:hover{
     border-radius:14px ;
     outline: none ;
 }
+@media(max-width: 600px){
+    
+    .inpts{    width: 350px;}
+
+}
+
 .area{
-    height: 300px;
+    /* height: 300px; */
     
 }
 .bt{display: flex;
@@ -300,6 +325,7 @@ nav .items .item:hover{
     display:flex;  
     flex-wrap: wrap;
     margin-top: 30px;
+    justify-content: center;
 }
 .galleryres .image{
     padding: 7px;
@@ -310,9 +336,9 @@ nav .items .item:hover{
     width: 100%;
     overflow: hidden;
 }
-.galleryres .image img{
-    width: 300px;
-    height: 250px;
-    vertical-align: middle;
+.res {
+    margin: 10px auto;
+    max-width: 1100px;
+    
     cursor: pointer;
 }

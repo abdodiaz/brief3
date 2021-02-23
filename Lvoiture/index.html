@@ -43,18 +43,17 @@
             electronic typesetting, remaining essentially unchanged. It was popularised in 
             the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
             and more recently with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.<br><br> It has survived not only five centuries, but also the leap into
+            versions of Lorem Ipsum.<br><br> <span> It has survived not only five centuries, but also the leap into
             electronic typesetting, remaining essentially unchanged. It was popularised in 
             the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
             and more recently with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum. <br> <br>
+            versions of Lorem Ipsum. <br> <br></span>
          </p>
          <a href="#contact" class="btn" >Contact</a>
          </div>
-         <div class="col50">
-            <div class="imgBx">
-                <img src="image/img1.jpg" alt="=voiture">  
-            </div>
+         
+         <div class="imgBx">
+            <img src="image/img1.jpg" alt="=voiture">  
         </div>
       
     </div>
@@ -102,27 +101,25 @@
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
     </div>
-    <div class="galleryres">
-        <div class="image"  > <span><img id="imgVoiture" src="Vimg2/voiture.png" alt="voiture" onclick="voiture()" ></span></div>
-        <div class="image" > <span><img id="imgCamion" src="Vimg2/camion.png" alt="camion" ></span></div>
-        <div class="image" > <span><img id="imgEngins" src="Vimg2/engins.png"   alt="engin"></span></div>
-        <div class="image" > <span><img id="imgMOto" src="Vimg2/moto.png"alt="moto" ></span></div>
+    <div class="gallery res">
+        <div class="image"  > <span><img id="imgVoiture" src="Vimg2/voiture.png" alt="voiture" onclick="Vl(this, 'cadin')" ></span></div>
+        <div class="image"  > <span><img id="imgVoiture" src="Vimg2/voiture.png" alt="voiture" onclick="Vl(this, 'compact')" ></span></div>
+        <div class="image"  > <span><img id="imgVoiture" src="Vimg2/voiture.png" alt="voiture" onclick="Vl(this, 'berline')" ></span></div>
+        <div class="image" > <span><img id="imgCamion" src="Vimg2/camion.png" alt="camion" onclick="Vl(this, 'camion')" ></span></div>
+        <div class="image" > <span><img id="imgEngins" src="Vimg2/engins.png"   alt="engin" onclick="Vl(this, 'engin')"></span></div>
+        <div class="image" > <span><img id="imgMOto" src="Vimg2/moto.png"alt="moto" onclick="Vl(this, 'moto')" ></span></div>
+    
     </div>
     <div class="inpt" id="form" >
-        <label>type</label>
-       <select name="type" id="type" s>
-           <option value="cadin">cadin</option>
-           <option value="compact">compact</option>
-           <option value="berline">berline</option>
-       </select>
-       <label>carburant</label>
+       <label  id="carburantL">carburant</label>
        <select name="carburant" id="carburant">
-           <option value="carburant"></option>
+           <option value="-1">choisir carburant</option>
        </select>
-       <label>boite à vitesse </label>
-       <span id="boite">sdc</span>
-       <input type="text"  id="subject" class="inpts"  placeholder="Nombre du jours">
-       <button type="button" onclick="" class="btn bt">Réserver</button>
+       <div id ="boitevts">
+       <label>boite à vitesse </label><br>
+       <span id="tboite"></span></div>
+       <input type="text"  id="inptss" class="inpts"  placeholder="Nombre du jours">
+       <button type="button" onclick="calcul()" class="btn bt">Réserver</button>
     </div>
 </section>
 <section class="contact" id="contact">
